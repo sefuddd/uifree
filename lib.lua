@@ -1278,7 +1278,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
 			Button.Visible = true
-			Button.Size = UDim2.new(0, 590, 0, 35)
 			Button.Parent = TabPage
 
 			Button.BackgroundTransparency = 1
@@ -2115,6 +2114,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Toggle = Elements.Template.Toggle:Clone()
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
+			Toggle.Title.TextXAlignment = Enum.TextXAlignment.Left
 			Toggle.Visible = true
 			Toggle.Parent = TabPage
 
@@ -2412,7 +2412,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 	TweenService:Create(LoadingFrame.Version, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 	task.wait(0.2)
 	TweenService:Create(Main, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 650, 0, 475)}):Play()
-	-- teste
 	TweenService:Create(Elements, TweenInfo.new(0.8, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 590, 1, -100)}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 650, 0, 45)}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {ImageTransparency = 0.4}):Play()
