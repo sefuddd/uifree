@@ -1346,7 +1346,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			ColorPicker.ClipsDescendants = true
 			ColorPicker.Name = ColorPickerSettings.Name
 			ColorPicker.Title.Text = ColorPickerSettings.Name
-			ColorPicker.Title.Position = UDim2.new(1, -150, 0, 20)
+			--ColorPicker.Title.Position = UDim2.new(1, -150, 0, 20)
 			ColorPicker.Visible = true
 			ColorPicker.Parent = TabPage
 			ColorPicker.Size = UDim2.new(1, -10, 0.028, 35)
@@ -1556,7 +1556,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			local Section = Elements.Template.SectionTitle:Clone()
 			Section.Title.Text = SectionName
-			Section.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Section.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Section: " + Section.Title.Position)
 			Section.Visible = true
 			Section.Parent = TabPage
 
