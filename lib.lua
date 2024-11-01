@@ -1579,7 +1579,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			local Label = Elements.Template.Label:Clone()
 			Label.Title.Text = LabelText
-			Label.Title.Position = UDim2.new(1, 0, 0.5, 0)
+			--Label.Title.Position = UDim2.new(1, 0, 0.5, 0)
 			--print(Label.Title.Position)
 			Label.Visible = true
 			Label.Parent = TabPage
@@ -1777,7 +1777,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 				if Debounce then return end
 				if Dropdown.List.Visible then
 					Debounce = true
-					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(1, -10, 0, 45)}):Play()
+					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(1, -100, 0, 45)}):Play()
 					for _, DropdownOpt in ipairs(Dropdown.List:GetChildren()) do
 						if DropdownOpt.ClassName == "Frame" and DropdownOpt.Name ~= "Placeholder" then
 							TweenService:Create(DropdownOpt, TweenInfo.new(0.3, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
