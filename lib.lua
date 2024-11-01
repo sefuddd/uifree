@@ -1278,7 +1278,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
 			-- Button.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Button: "..Button.Title.Position)
+			print(Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
 
