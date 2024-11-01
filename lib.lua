@@ -1580,7 +1580,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Label = Elements.Template.Label:Clone()
 			Label.Title.Text = LabelText
 			Label.Title.Position = UDim2.new(1, 0, 0.5, 0)
-			print(Label.Title.Position)
+			--print(Label.Title.Position)
 			Label.Visible = true
 			Label.Parent = TabPage
 
