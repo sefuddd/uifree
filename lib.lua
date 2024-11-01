@@ -2115,7 +2115,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
 			-- teste
-			Toggle.Title.Position = UDim2.new(1, -80, 0, 20)
+			Toggle.Title.Position = UDim2.new(1, -280, 0, 20)
 			print(Toggle.Title.Position)
 			Toggle.Visible = true
 			Toggle.Parent = TabPage
