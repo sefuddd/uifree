@@ -1278,7 +1278,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
 			Button.Visible = true
-			Button.Size = UDim2.new(0, 20, 0, 20)
+			Button.Size = UDim2.new(0, 590, 0, 30)
 			Button.Parent = TabPage
 
 			Button.BackgroundTransparency = 1
