@@ -1755,6 +1755,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Dropdown.Title.TextTransparency = 1
 
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
+			-- teste
+			Dropdown.List.Size = Udim2.new(0, 590, 0, 126)
 
 			TweenService:Create(Dropdown, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {BackgroundTransparency = 0}):Play()
 			TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Transparency = 0}):Play()
@@ -1777,7 +1779,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 				if Debounce then return end
 				if Dropdown.List.Visible then
 					Debounce = true
-					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(1, -100, 0, 45)}):Play()
+					TweenService:Create(Dropdown, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(1, -10, 0, 45)}):Play()
 					for _, DropdownOpt in ipairs(Dropdown.List:GetChildren()) do
 						if DropdownOpt.ClassName == "Frame" and DropdownOpt.Name ~= "Placeholder" then
 							TweenService:Create(DropdownOpt, TweenInfo.new(0.3, Enum.EasingStyle.Quint), {BackgroundTransparency = 1}):Play()
