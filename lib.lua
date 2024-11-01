@@ -1277,7 +1277,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Button = Elements.Template.Button:Clone()
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
-			Button.Title.Position = UDim2.new(0.5, 0, 0.5, 0)
+			--Button.Title.Position = UDim2.new(0.5, 0, 0.5, 0)
 			--print(Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
@@ -2129,7 +2129,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Toggle = Elements.Template.Toggle:Clone()
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
-			Toggle.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Toggle.Title.Position = UDim2.new(1, -150, 0, 20)
 			--print(Toggle.Title.Position)
 			Toggle.Visible = true
 			Toggle.Parent = TabPage
