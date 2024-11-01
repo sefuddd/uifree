@@ -1756,7 +1756,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
 			-- teste
-			Dropdown.List.Template.Size = UDim2.new(0, 97, 0, 38)
+			Dropdown.List.Template.Size = UDim2.new(0, 1197, 0, 38)
 			print(Dropdown.List.Template.Size)
 
 			TweenService:Create(Dropdown, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {BackgroundTransparency = 0}):Play()
