@@ -1277,7 +1277,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Button = Elements.Template.Button:Clone()
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
-			Button.Title.Position = UDim2.new(1, 0, 0.5, 0)
+			Button.Title.Position = UDim2.new(0.5, 0, 0.5, 0)
 			--print(Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
