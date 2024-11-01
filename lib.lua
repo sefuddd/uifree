@@ -1286,7 +1286,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			TweenService:Create(Button, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {BackgroundTransparency = 0}):Play()
 			--caraio
-			TweenService:Create(Button, TweenInfo.new(1, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 460, 1, 45)}):Play()
+			--TweenService:Create(Button, TweenInfo.new(1, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 460, 1, 45)}):Play()
 			TweenService:Create(Button.UIStroke, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Transparency = 0}):Play()
 			TweenService:Create(Button.Title, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {TextTransparency = 0}):Play()	
 
