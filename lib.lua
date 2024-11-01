@@ -1557,7 +1557,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Section = Elements.Template.SectionTitle:Clone()
 			Section.Title.Text = SectionName
 			--Section.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Section: " .. Section.Title.Position)
+			--print("Section: " .. Section.Title.Position)
 			Section.Visible = true
 			Section.Parent = TabPage
 
