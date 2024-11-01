@@ -1278,6 +1278,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
 			Button.Visible = true
+			Button.Size = UDim2.new(0, 20, 0, 20)
 			Button.Parent = TabPage
 
 			Button.BackgroundTransparency = 1
@@ -1418,8 +1419,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			ColorPicker.HexInput.InputBox.Text = hex
 			local function setDisplay()
 				--Main
-				--Main.MainPoint.Position = UDim2.new(s,-Main.MainPoint.AbsoluteSize.X/2,1-v,-Main.MainPoint.AbsoluteSize.Y/2)
-				Main.MainPoint.Position = UDim2.new(s,100,1-v,100)
+				Main.MainPoint.Position = UDim2.new(s,-Main.MainPoint.AbsoluteSize.X/2,1-v,-Main.MainPoint.AbsoluteSize.Y/2)
 				Main.MainPoint.ImageColor3 = Color3.fromHSV(h,s,v)
 				Background.BackgroundColor3 = Color3.fromHSV(h,1,1)
 				Display.BackgroundColor3 = Color3.fromHSV(h,s,v)
