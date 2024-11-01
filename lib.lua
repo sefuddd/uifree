@@ -1277,7 +1277,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Button = Elements.Template.Button:Clone()
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
-			Button.Title.Position = UDim2.new(0.45, 0, 0.5, 0)
+			Button.Title.Position = UDim2.new(1, 0, 0.5, 0)
 			--print(Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
@@ -1579,7 +1579,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			local Label = Elements.Template.Label:Clone()
 			Label.Title.Text = LabelText
-			--Label.Title.Position = UDim2.new(1, -150, 0, 20)
+			Label.Title.Position = UDim2.new(1, 0, 0.5, 0)
 			print(Label.Title.Position)
 			Label.Visible = true
 			Label.Parent = TabPage
