@@ -1,6 +1,6 @@
-local Release = "Beta 8"
+local Release = "Beta 1.0"
 local NotificationDuration = 6.5
-local RayfieldFolder = "Rayfield"
+local RayfieldFolder = "VoidCodex"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 
@@ -104,7 +104,7 @@ local CoreGui = game:GetService("CoreGui")
 -- Interface Management
 local Rayfield = game:GetObjects("rbxassetid://10804731440")[1]
 
-Rayfield.Enabled = false
+Rayfield.Enabled = true
 
 
 if gethui then
