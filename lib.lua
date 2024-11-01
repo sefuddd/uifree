@@ -261,7 +261,7 @@ local function SaveConfiguration()
 			Data[i] = v.CurrentValue or v.CurrentKeybind or v.CurrentOption or v.Color
 		end
 	end	
-	writefile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension, tostring(HttpService:JSONEncode(Data)))
+	writefile(ConfigurationFolder.."/"..CFileName..ConfigurationExtension, tostring(HttpService:JSONEncode(Data)))
 end
 
 local neon = (function() -- Open sourced neon module
@@ -1278,7 +1278,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
 			-- Button.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Button: " .. Button.Title.Position)
+			print("Button: "..Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
 
@@ -1557,7 +1557,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Section = Elements.Template.SectionTitle:Clone()
 			Section.Title.Text = SectionName
 			--Section.Title.Position = UDim2.new(1, -150, 0, 20)
-			--print("Section: " .. Section.Title.Position)
+			--print("Section: "..Section.Title.Position)
 			Section.Visible = true
 			Section.Parent = TabPage
 
@@ -1580,7 +1580,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Label = Elements.Template.Label:Clone()
 			Label.Title.Text = LabelText
 			--Label.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Label: " .. Label.Title.Position)
+			print("Label: "..Label.Title.Position)
 			Label.Visible = true
 			Label.Parent = TabPage
 
@@ -1610,7 +1610,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Paragraph.Title.Text = ParagraphSettings.Title
 			Paragraph.Content.Text = ParagraphSettings.Content
 			--Paragraph.Title.Position = UDim2.new(1, -95, 0, 20)
-			print("Paragraph: " .. Paragraph.Title.Position)
+			print("Paragraph: "..Paragraph.Title.Position)
 			Paragraph.Visible = true
 			Paragraph.Parent = TabPage
 
@@ -1645,7 +1645,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Input.Name = InputSettings.Name
 			Input.Title.Text = InputSettings.Name
 			--Input.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Input: " .. Input.Title.Position)
+			print("Input: "..Input.Title.Position)
 			Input.Visible = true
 			Input.Parent = TabPage
 
@@ -1716,7 +1716,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 			Dropdown.Title.Text = DropdownSettings.Name
 			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Dropdown: " .. Dropdown.Title.Position)
+			print("Dropdown: "..Dropdown.Title.Position)
 			Dropdown.Visible = true
 			Dropdown.Parent = TabPage
 
@@ -2016,7 +2016,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Keybind.Name = KeybindSettings.Name
 			Keybind.Title.Text = KeybindSettings.Name
 			--Keybind.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Keybind: " .. Keybind.Title.Position)
+			print("Keybind: "..Keybind.Title.Position)
 			Keybind.Visible = true
 			Keybind.Parent = TabPage
 
@@ -2303,7 +2303,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			if not SliderSettings.Suffix then
 				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue)
 			else
-				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue) .. " " .. SliderSettings.Suffix
+				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue).." "..SliderSettings.Suffix
 			end
 
 
@@ -2359,7 +2359,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 						if not SliderSettings.Suffix then
 							Slider.Main.Information.Text = tostring(NewValue)
 						else
-							Slider.Main.Information.Text = tostring(NewValue) .. " " .. SliderSettings.Suffix
+							Slider.Main.Information.Text = tostring(NewValue).." "..SliderSettings.Suffix
 						end
 
 						if SliderSettings.CurrentValue ~= NewValue then
@@ -2390,7 +2390,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			function SliderSettings:Set(NewVal)
 				TweenService:Create(Slider.Main.Progress, TweenInfo.new(0.45, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, Slider.Main.AbsoluteSize.X * ((NewVal + SliderSettings.Range[1]) / (SliderSettings.Range[2] - SliderSettings.Range[1])) > 5 and Slider.Main.AbsoluteSize.X * (NewVal / (SliderSettings.Range[2] - SliderSettings.Range[1])) or 5, 1, 0)}):Play()
-				Slider.Main.Information.Text = tostring(NewVal) .. " " .. (SliderSettings.Suffix or "")
+				Slider.Main.Information.Text = tostring(NewVal).." "..(SliderSettings.Suffix or "")
 				local Success, Response = pcall(function()
 					SliderSettings.Callback(NewVal)
 				end)
@@ -2530,8 +2530,8 @@ end
 function RayfieldLibrary:LoadConfiguration()
 	if CEnabled then
 		pcall(function()
-			if isfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension) then
-				LoadConfiguration(readfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension))
+			if isfile(ConfigurationFolder.."/"..CFileName..ConfigurationExtension) then
+				LoadConfiguration(readfile(ConfigurationFolder.."/"..CFileName..ConfigurationExtension))
 				RayfieldLibrary:Notify({Title = "Configuration Loaded", Content = "The configuration file for this script has been loaded from a previous session."})
 			end
 		end)
