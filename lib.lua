@@ -490,7 +490,7 @@ function RayfieldLibrary:Notify(NotificationSettings)
 		local ActionCompleted = true
 		local Notification = Notifications.Template:Clone()
 		Notification.Parent = Notifications
-		Notification.Name = NotificationSettings.Title or "Unknown Title"
+		Notification.Name = NotificationSettings.Title or "VoidCodex Hub"
 		Notification.Visible = true
 
 		local blurlight = nil
@@ -1753,7 +1753,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 				end
 			end
 
-			Dropdown.Toggle.Rotation = 80
+			Dropdown.Toggle.Rotation = 180
 
 			Dropdown.Interact.MouseButton1Click:Connect(function()
 				TweenService:Create(Dropdown, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackgroundHover}):Play()
@@ -1844,7 +1844,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 								elseif #DropdownSettings.CurrentOption == 0 then
 									Dropdown.Selected.Text = "None"
 								else
-									Dropdown.Selected.Text = "Various"
+									Dropdown.Selected.Text = DropdownSettings.CurrentOption[1] + DropdownSettings.CurrentOption[2] + "..."
 								end
 							else
 								Dropdown.Selected.Text = DropdownSettings.CurrentOption[1]
@@ -1860,7 +1860,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 								elseif #DropdownSettings.CurrentOption == 0 then
 									Dropdown.Selected.Text = "None"
 								else
-									Dropdown.Selected.Text = "Various"
+									Dropdown.Selected.Text = DropdownSettings.CurrentOption[1] + DropdownSettings.CurrentOption[2] + "..."
 								end
 							else
 								Dropdown.Selected.Text = DropdownSettings.CurrentOption[1]
@@ -1881,8 +1881,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 							TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 							TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 							Dropdown.Title.Text = "Callback Error"
-							print("Rayfield | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
-							warn('Check docs.sirius.menu for help with Rayfield specific development.')
+							print("VoidCodex | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
+							--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 							task.wait(0.5)
 							Dropdown.Title.Text = DropdownSettings.Name
 							TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -1943,7 +1943,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					elseif #DropdownSettings.CurrentOption == 0 then
 						Dropdown.Selected.Text = "None"
 					else
-						Dropdown.Selected.Text = "Various"
+						Dropdown.Selected.Text = DropdownSettings.CurrentOption[1] + DropdownSettings.CurrentOption[2] + "..."
 					end
 				else
 					Dropdown.Selected.Text = DropdownSettings.CurrentOption[1]
@@ -1957,8 +1957,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 					TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Dropdown.Title.Text = "Callback Error"
-					print("Rayfield | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Check docs.sirius.menu for help with Rayfield specific development.')
+					print("VoidCodex | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
+					--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 					task.wait(0.5)
 					Dropdown.Title.Text = DropdownSettings.Name
 					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2066,8 +2066,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 							TweenService:Create(Keybind, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 							TweenService:Create(Keybind.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 							Keybind.Title.Text = "Callback Error"
-							print("Rayfield | "..KeybindSettings.Name.." Callback Error " ..tostring(Response))
-							warn('Check docs.sirius.menu for help with Rayfield specific development.')
+							print("VoidCodex | "..KeybindSettings.Name.." Callback Error " ..tostring(Response))
+							--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 							task.wait(0.5)
 							Keybind.Title.Text = KeybindSettings.Name
 							TweenService:Create(Keybind, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2188,8 +2188,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Toggle.Title.Text = "Callback Error"
-					print("Rayfield | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Check docs.sirius.menu for help with Rayfield specific development.')
+					print("VoidCodex | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
+					--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 					task.wait(0.5)
 					Toggle.Title.Text = ToggleSettings.Name
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2237,8 +2237,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Toggle.Title.Text = "Callback Error"
-					print("Rayfield | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Check docs.sirius.menu for help with Rayfield specific development.')
+					print("VoidCodex | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
+					--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 					task.wait(0.5)
 					Toggle.Title.Text = ToggleSettings.Name
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2353,8 +2353,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 								TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 								TweenService:Create(Slider.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 								Slider.Title.Text = "Callback Error"
-								print("Rayfield | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
-								warn('Check docs.sirius.menu for help with Rayfield specific development.')
+								print("VoidCodex | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
+								--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 								task.wait(0.5)
 								Slider.Title.Text = SliderSettings.Name
 								TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2381,8 +2381,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 					TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 					TweenService:Create(Slider.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Slider.Title.Text = "Callback Error"
-					print("Rayfield | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Check docs.sirius.menu for help with Rayfield specific development.')
+					print("VoidCodex | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
+					--warn('Check docs.sirius.menu for help with Rayfield specific development.')
 					task.wait(0.5)
 					Slider.Title.Text = SliderSettings.Name
 					TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2410,7 +2410,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	TweenService:Create(LoadingFrame.Subtitle, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 	TweenService:Create(LoadingFrame.Version, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 	task.wait(0.2)
-	TweenService:Create(Main, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 500, 0, 475)}):Play()
+	TweenService:Create(Main, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 650, 0, 475)}):Play()
 	TweenService:Create(Main.Shadow.Image, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {ImageTransparency = 0.4}):Play()
 
 	Topbar.BackgroundTransparency = 1
@@ -2479,7 +2479,7 @@ Topbar.Hide.MouseButton1Click:Connect(function()
 end)
 
 UserInputService.InputBegan:Connect(function(input, processed)
-	if (input.KeyCode == Enum.KeyCode.K and not processed) then
+	if (input.KeyCode == Enum.KeyCode.V and not processed) then
 		if Debounce then return end
 		if Hidden then
 			Hidden = false
