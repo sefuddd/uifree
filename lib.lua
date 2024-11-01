@@ -2112,11 +2112,11 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local ToggleValue = {}
 
 			local Toggle = Elements.Template.Toggle:Clone()
-			local togglePosition = Toggle.Position
+			--local togglePosition = Toggle.Position
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
-			Toggle.Title.Position = UDim2.new(Toggle.Position)
-			Toggle.Title.TextXAlignment = Enum.TextXAlignment.Left
+			--Toggle.Title.Position = UDim2.new(Toggle.Position)
+			--Toggle.Title.TextXAlignment = Enum.TextXAlignment.Left
 			Toggle.Visible = true
 			Toggle.Parent = TabPage
 
