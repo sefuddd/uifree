@@ -2115,7 +2115,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
 			-- teste
-			--Toggle.Title.Position = UDim2.new(0, 15, 0, 1)
+			Toggle.Title.Position = UDim2.new(1, -80, 0, 20)
 			print(Toggle.Title.Position)
 			Toggle.Visible = true
 			Toggle.Parent = TabPage
@@ -2207,7 +2207,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 				if NewToggleValue then
 					ToggleSettings.CurrentValue = true
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackgroundHover}):Play()
-					TweenService:Create(Toggle.Title.Position(0.7, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 15, 0, 1)}):Play()
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					TweenService:Create(Toggle.Switch.Indicator, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(1, -20, 0.5, 0)}):Play()
 					TweenService:Create(Toggle.Switch.Indicator, TweenInfo.new(0.4, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Size = UDim2.new(0,12,0,12)}):Play()
