@@ -1277,7 +1277,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Button = Elements.Template.Button:Clone()
 			Button.Name = ButtonSettings.Name
 			Button.Title.Text = ButtonSettings.Name
-			Button.Title.Position = UDim2.new(1, -150, 0, 20)
+			-- Button.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Button: " + Button.Title.Position)
 			Button.Visible = true
 			Button.Parent = TabPage
 
@@ -1577,7 +1578,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			local Label = Elements.Template.Label:Clone()
 			Label.Title.Text = LabelText
-			Label.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Label.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Label: " + Label.Title.Position)
 			Label.Visible = true
 			Label.Parent = TabPage
 
@@ -1606,7 +1608,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Paragraph = Elements.Template.Paragraph:Clone()
 			Paragraph.Title.Text = ParagraphSettings.Title
 			Paragraph.Content.Text = ParagraphSettings.Content
-			Paragraph.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Paragraph.Title.Position = UDim2.new(1, -95, 0, 20)
+			print("Paragraph: " + Paragraph.Title.Position)
 			Paragraph.Visible = true
 			Paragraph.Parent = TabPage
 
@@ -1640,7 +1643,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Input = Elements.Template.Input:Clone()
 			Input.Name = InputSettings.Name
 			Input.Title.Text = InputSettings.Name
-			Input.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Input.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Input: " + Input.Title.Position)
 			Input.Visible = true
 			Input.Parent = TabPage
 
@@ -1710,7 +1714,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 				Dropdown.Name = DropdownSettings.Name
 			end
 			Dropdown.Title.Text = DropdownSettings.Name
-			Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Dropdown: " + Dropdown.Title.Position)
 			Dropdown.Visible = true
 			Dropdown.Parent = TabPage
 
@@ -2009,7 +2014,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Keybind = Elements.Template.Keybind:Clone()
 			Keybind.Name = KeybindSettings.Name
 			Keybind.Title.Text = KeybindSettings.Name
-			Keybind.Title.Position = UDim2.new(1, -150, 0, 20)
+			--Keybind.Title.Position = UDim2.new(1, -150, 0, 20)
+			print("Keybind: " + Keybind.Title.Position)
 			Keybind.Visible = true
 			Keybind.Parent = TabPage
 
@@ -2122,7 +2128,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			local Toggle = Elements.Template.Toggle:Clone()
 			Toggle.Name = ToggleSettings.Name
 			Toggle.Title.Text = ToggleSettings.Name
-			-- teste
 			Toggle.Title.Position = UDim2.new(1, -150, 0, 20)
 			print(Toggle.Title.Position)
 			Toggle.Visible = true
