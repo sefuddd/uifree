@@ -1610,7 +1610,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Paragraph.Title.Text = ParagraphSettings.Title
 			Paragraph.Content.Text = ParagraphSettings.Content
 			--Paragraph.Title.Position = UDim2.new(1, -95, 0, 20)
-			print("Paragraph: "..Paragraph.Title.Position)
+			--print("Paragraph: "..Paragraph.Title.Position)
 			Paragraph.Visible = true
 			Paragraph.Parent = TabPage
 
@@ -1645,7 +1645,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Input.Name = InputSettings.Name
 			Input.Title.Text = InputSettings.Name
 			--Input.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Input: "..Input.Title.Position)
+			--print("Input: "..Input.Title.Position)
 			Input.Visible = true
 			Input.Parent = TabPage
 
@@ -1716,7 +1716,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 			Dropdown.Title.Text = DropdownSettings.Name
 			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Dropdown: "..Dropdown.Title.Position)
+			--print("Dropdown: "..Dropdown.Title.Position)
 			Dropdown.Visible = true
 			Dropdown.Parent = TabPage
 
@@ -2016,7 +2016,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Keybind.Name = KeybindSettings.Name
 			Keybind.Title.Text = KeybindSettings.Name
 			--Keybind.Title.Position = UDim2.new(1, -150, 0, 20)
-			print("Keybind: "..Keybind.Title.Position)
+			--print("Keybind: "..Keybind.Title.Position)
 			Keybind.Visible = true
 			Keybind.Parent = TabPage
 
