@@ -1759,8 +1759,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
 			Dropdown.Toggle.Position = UDim2.new(0, 550, 0, 23)
 			Dropdown.List.Size = UDim2.new(0, 575, 0, 126)
-			Dropdown.Selected.Text = Enum.TextXAlignment.Left
-			Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
+			--Dropdown.Selected.Text = Enum.TextXAlignment.Left
+			--Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
 			print("Tchau")
 			--Dropdown.List.Template.Size = UDim2.new(0, 1197, 0, 38)
 			--print(Dropdown.List.Template.Size)
