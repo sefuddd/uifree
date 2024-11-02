@@ -1755,7 +1755,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Dropdown.Title.TextTransparency = 1
 
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
-			-- teste
 			--Dropdown.List.Template.Size = UDim2.new(0, 1197, 0, 38)
 			--print(Dropdown.List.Template.Size)
 
@@ -1770,6 +1769,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 
 			Dropdown.Toggle.Rotation = 180
+			Dropdown.Toggle.Position = Udim2.new(0, 560, 0, 23)
 			print(Dropdown.Toggle.Position)
 
 			Dropdown.Interact.MouseButton1Click:Connect(function()
