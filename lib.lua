@@ -761,6 +761,8 @@ function Maximise()
 	TweenService:Create(Topbar.Divider, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {BackgroundTransparency = 0}):Play()
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = useMobileSizing and UDim2.new(0, 500, 0, 275) or UDim2.new(0, 650, 0, 475)}):Play()
 	TweenService:Create(Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 650, 0, 45)}):Play()
+	TabList.Size = UDim2.new(0, 578, 0, 36)
+	TabList.Position = UDim2.new(0, 501, 0, 72)
 	TabList.Visible = true
 	task.wait(0.2)
 
@@ -1721,7 +1723,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Dropdown.Selected.Size = UDim2.new(0, 168, 0, 14)
 			Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
 			Dropdown.Visible = true
-			-- teste
 			Dropdown.Parent = TabPage
 
 			Dropdown.List.Visible = false
