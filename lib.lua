@@ -1718,11 +1718,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
 			--print("Dropdown: "..Dropdown.Title.Position)
 			print("oi")
-			Dropdown.Toggle.Position = UDim2.new(0, 550, 0, 23)
-			Dropdown.List.Size = UDim2.new(0, 575, 0, 126)
-			--Dropdown.Selected.Text = Enum.TextXAlignment.Left
-			Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
-			print("Tchau")
 			Dropdown.Visible = true
 			-- teste
 			Dropdown.Parent = TabPage
@@ -1762,6 +1757,11 @@ function RayfieldLibrary:CreateWindow(Settings)
 			Dropdown.Title.TextTransparency = 1
 
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
+			Dropdown.Toggle.Position = UDim2.new(0, 550, 0, 23)
+			Dropdown.List.Size = UDim2.new(0, 575, 0, 126)
+			Dropdown.Selected.Text = Enum.TextXAlignment.Left
+			Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
+			print("Tchau")
 			--Dropdown.List.Template.Size = UDim2.new(0, 1197, 0, 38)
 			--print(Dropdown.List.Template.Size)
 
