@@ -1719,10 +1719,12 @@ function RayfieldLibrary:CreateWindow(Settings)
 			--print("Dropdown: "..Dropdown.Title.Position)
 			Dropdown.Visible = true
 			-- teste
+			print("oi")
 			Dropdown.Toggle.Position = Udim2.new(0, 550, 0, 23)
 			Dropdown.List.Size = Udim2.new(0, 575, 0, 126)
 			--Dropdown.Selected.Text = TextXAlignment.Left
 			Dropdown.Selected.Position = Udim2.new(0, 433, 0, 23)
+			print("Tchau")
 			Dropdown.Parent = TabPage
 
 			Dropdown.List.Visible = false
