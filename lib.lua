@@ -1718,6 +1718,11 @@ function RayfieldLibrary:CreateWindow(Settings)
 			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
 			--print("Dropdown: "..Dropdown.Title.Position)
 			Dropdown.Visible = true
+			-- teste
+			Dropdown.Toggle.Position = Udim2.new(0, 550, 0, 23)
+			Dropdown.List.Size = Udim2.new(0, 575, 0, 126)
+			Dropdown.Selected.Text = TextXAlignment.Left
+			Dropdown.Selected.Position = Udim2.new(0, 433, 0, 23)
 			Dropdown.Parent = TabPage
 
 			Dropdown.List.Visible = false
@@ -1769,8 +1774,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 
 			Dropdown.Toggle.Rotation = 180
-			Dropdown.Toggle.Position = Udim2.new(0, 560, 0, 23)
-			print(Dropdown.Toggle.Position)
+			
 
 			Dropdown.Interact.MouseButton1Click:Connect(function()
 				TweenService:Create(Dropdown, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {BackgroundColor3 = SelectedTheme.ElementBackgroundHover}):Play()
