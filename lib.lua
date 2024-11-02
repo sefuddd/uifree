@@ -1716,7 +1716,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 			Dropdown.Title.Text = DropdownSettings.Name
 			Dropdown.Toggle.Position = UDim2.new(0, 550, 0, 23)
-			Dropdown.List.Size = UDim2.new(0, 565, 0, 40)
+			Dropdown.List.Size = UDim2.new(0, 565, 0, 126)
 			Dropdown.Selected.TextXAlignment = Enum.TextXAlignment.Left
 			Dropdown.Selected.Size = UDim2.new(0, 168, 0, 14)
 			Dropdown.Selected.Position = UDim2.new(0, 433, 0, 23)
