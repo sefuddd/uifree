@@ -1715,8 +1715,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 				Dropdown.Name = DropdownSettings.Name
 			end
 			Dropdown.Title.Text = DropdownSettings.Name
-			--Dropdown.Title.Position = UDim2.new(1, -150, 0, 20)
-			--print("Dropdown: "..Dropdown.Title.Position)
 			Dropdown.Toggle.Position = UDim2.new(0, 550, 0, 23)
 			Dropdown.List.Size = UDim2.new(0, 565, 0, 40)
 			Dropdown.Selected.TextXAlignment = Enum.TextXAlignment.Left
@@ -1762,8 +1760,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			Dropdown.Size = UDim2.new(1, -10, 0, 45)
 			
-			--Dropdown.List.Template.Size = UDim2.new(0, 1197, 0, 38)
-			--print(Dropdown.List.Template.Size)
 
 			TweenService:Create(Dropdown, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {BackgroundTransparency = 0}):Play()
 			TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.7, Enum.EasingStyle.Quint), {Transparency = 0}):Play()
